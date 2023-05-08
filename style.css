@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+body {
+   font-family: 'Montserrat', sans-serif;
+   background: #000915;
+}
+
+.top {
+   min-height: 1024px;
+   background-image: url(imgJS/main.jpg);
+   background-position: center;
+   background-size: cover;
+}
+
+.top__heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    width: 788px;
+}   
+
+.text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+    width: 488px;
+    margin-bottom: 12px;
+}
+
+.top__content {
+    padding-top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.button {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    display: block;
+    background: #9C0332;
+    border-radius: 30px;
+    padding: 13px 74px;
+}
+
+.button:hover {
+    background: #EB443F;
+}
+
+.menu-game {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+gap: 32px;
+padding-top: 128px;
+padding-bottom: 128px;
+}
+
+.menu-game__item {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    padding: 32px;
+    color: #FFFFFF;
+    min-height: 300px;
+    width: 377px;
+    box-sizing: border-box;
+    border-radius: 17px;
+    align-items: flex-end;
+    transition: all 0.5s;
+}
+
+.menu-game__item:hover {
+    border: 3px solid #44D2FF;
+}
+
+.menu-game__item_1 {
+    background-image: url(imgJS/game1.jpg);
+}
+
+.menu-game__item_2 {
+    background-image: url(imgJS/game2.jpg);
+}
+
+.menu-game__item_3 {
+    background-image: url(imgJS/game3.jpg);
+}
+.game {
+    display: flex;
+    align-items: center;
+    padding-top: 233px;
+    padding-bottom: 233px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.game__content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 584px;
+    align-items: flex-start;
+}
+
+.game__heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    color: #FFFFFF;
+}
+
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top__content {
+        padding-top: 238px;
+        align-items: center;
+    }
+
+    .top__heading {
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .text {
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .game {
+        gap: 64px;
+        padding-top: 50px;
+        padding-bottom: 85px;
+    }
+
+    .game__heading {
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .game__content {
+        align-items: center;
+    }
+
+    .game__2 {
+        flex-wrap: wrap-reverse;
+    }
+       
+}
